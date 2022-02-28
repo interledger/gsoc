@@ -1,7 +1,5 @@
 # Interledger Summer of Code
 
-> You're early! Now is an excellent time to get set up, though. *Any* experience in our open source ecosystem will help you in your application. Don't worry about picking the perfect project yet, and just get familiar with Interledger. Not sure where to start? The [Before You Apply](#before-you-apply) section of this document is very helpful for that.
-
 ## What Is It?
 ### Interledger
 
