@@ -19,27 +19,68 @@ The standard is currently being incubated at the Web Platform Incubator Communit
 ### Interledger Foundation
 The [Interledger Foundation (ILF)](https://interledger.org/) was founded with the mission to broaden systemic financial inclusion on and through the Web. We are also the neutral home of the [Interledger Protocol](https://interledger.org/rfcs/0027-interledger-protocol-4/), which describes a currency agnostic payment network, and the drivers behind the proposed [W3C Web Monetization](https://webmonetization.org/) standard. We are delighted to participate in the Summer of Code this year.
 
-## Before You Apply
+## Ideas List
 
-### 1. Start by Picking a Project
-
-Our projects are related to either the Interledger network and our reference node implementation or the Web Monetization standard. Each of the projects requires slightly different skill sets.
-
-**Web Monetization**
+**Web Monetization Browser Exploration**
 
 We're experimenting with moving some of the code from the [Web Monetization extension](https://github.com/coilhq/web-monetization-projects/tree/main/packages/coil-extension) into a browser. As part of this project, please also choose one of your favourite browsers to attempt this on and let us know in your application process.
 
-**Interledger**
+Expected outcomes: Implement Web Monetization into a browser.
+Skills required/preferred: C++, JavaScript, familiarity with a browser code base
+Possible mentors: Alex Lakatos, Marcos Caceres.
+Expected size of project: 350 hours
+Difficulty Rating: Hard
 
-The Interledger reference node implementation is code-named [Rafiki](https://github.com/interledger/rafiki). It's an open-source package that exposes a comprehensive set of Interledger APIs. It's intended to be run by node providers, allowing them to offer Interledger functionality to their users. Pick any of the [issues labeled `type: gsoc`](https://github.com/interledger/rafiki/issues?q=is%3Aissue+is%3Aopen+label%3A%22type%3A+gsoc%22) and let us know in your application process.
+**Web Monetization Browser Exploration**
+
+We're experimenting with refactoring some of the code from the [Web Monetization extension](https://github.com/coilhq/web-monetization-projects/tree/main/packages/coil-extension) two separate extensions, one to be a reusable Web Monetization Agent, and a second one to be a boilerplate Web Monetization Provider.
+
+Expected outcomes: Break up the existing Coil extension in two separate projects
+Skills required/preferred: JavaScript
+Possible mentors: Alex Lakatos, Nicholas Dudfield.
+Expected size of project: 175/350 hours.
+Difficulty Rating: Medium.
+
+**Interledger GNAP Client**
+
+The Interledger reference node implementation is code-named [Rafiki](https://github.com/interledger/rafiki). It's an open-source package that exposes a comprehensive set of Interledger APIs. It's intended to be run by node providers, allowing them to offer Interledger functionality to their users. We're transitioning to a use GNAP protocol instead of OAuth. The project would be to write an open-sourced GNAP client in TypeScript we could use in Rafiki.
+
+Expected outcomes: Open-sourced GNAP client for TypeScript
+Skills required/preferred: TypeScript
+Possible mentors: Sabine Schaller, Alex Lakatos.
+Expected size of project: 350 hours.
+Difficulty Rating: Medium.
+
+**Interledger Deployment Pipelines**
+
+The Interledger reference node implementation is code-named [Rafiki](https://github.com/interledger/rafiki). It's an open-source package that exposes a comprehensive set of Interledger APIs. It's intended to be run by node providers, allowing them to offer Interledger functionality to their users. We're trying to provide deployment instructions for various different systems, currently Docker and Kubernetes.
+
+Expected outcomes: Deployment pipelines for Docker and Kubernetes
+Skills required/preferred: Docker, Kubernetes
+Possible mentors: Sabine Schaller, Matthew de Haast.
+Expected size of project: 175 hours.
+Difficulty Rating: Easy.
 
 **Interledger Example**
 
-We also provide an example wallet in a test network with [rafiki.money](https://github.com/interledgerjs/rafiki.money). As part of GSoC, we'd like to update this to use the new `Rafiki node` instead of the earlier limited `ilp-connector`.
+We also provide an example wallet in a test network with [rafiki.money](https://github.com/interledgerjs/rafiki.money). As part of GSoC, we'd like to update this to use the new `Rafiki node` instead of the earlier limited `ilp-connector`. The scope of this project could also be expanded if you want into updating the client UI for it.
+
+Expected outcomes: Use Rafikin instead of ilp-connector in rafiki.money / update the UI.
+Skills required/preferred: JavaScript, Node.js
+Possible mentors: Matthew de Haast, Alex Lakatos.
+Expected size of project: 175/350 hours.
+Difficulty Rating: Easy/Medium.
 
 **Anything Else**
 
 Alternatively, if you want to propose your own idea, then please reach out to [Alex Lakatos](https://twitter.com/avolakatos), the ILF Technology Lead, to discuss your idea first.
+
+## Before You Apply
+
+### 1. Start by Picking a Project from the Ideas List above
+
+Our projects are related to either the Interledger network and our reference node implementation or the Web Monetization standard. Each of the projects requires slightly different skill sets.
+
 
 ### 2. Join Slack
 
